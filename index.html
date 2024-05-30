@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <title>SIGNUP FORM</title>
+        <meta name="viewport" content="width=device-width,intial-scale=1">
+       <link rel="stylesheet" href="main.css">
+ 
+    </head>
+    <body>
+
+        <div><button id="openModalBtn">Sign Up</button><br></div>
+        <div><button id="toggleThemeBtn">Toggle Theme</button></div>
+        <div id="userCounter">Number of Registered Users: <span id="counter">0</span></div>
+        <div id="signupModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+            <form id="signupForm">
+                <h2>Sign Up</h2>
+                <div>
+                   <label for="fname"><b>Name</b></label>
+                   <input type="text" name="name" id="fname" required maxlength="5" minlength="5">
+                   <span class="error-message" id="fnameError">Name must be exactly 5 characters long.</span>
+                </div>
+                <div>
+                    <label for="email"><b>Email</b></label>
+                    <input type="email" name="mail" id="email" required>
+                 </div>
+                 <div>
+                    <label for="passkey"><b>Password</b></label>
+                    <input type="password" name="password" id="passkey" minlength="8" required>
+                    
+                 </div>
+                 <div>
+                    <label for="pnumber"><b>Phone Number</b></label>
+                    <input type="tel" name="phone" id="pnumber" minlength="10" maxlength="10">
+                 </div>
+                 <div>
+                    <label for="gen"><b>Gender</b></label><br>
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label for="male" class="gender-label">Male</label>
+
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label for="female" class="gender-label">Female</label>
+
+                    <input type="radio" name="gender" id="other" value="other">
+                    <label for="other" class="gender-label">Other</label>
+
+                 </div>
+                 <div>
+                    <b>Sports interest in:</b>
+                    <select name="sportsInterest">
+                        <option>None</option>
+                        <option>Athletics</option>
+                        <option>Badminton</option>
+                        <option>Basketball</option>
+                        <option>Cricket</option>
+                        <option>Football</option>
+                        <option>Hockey</option>
+                        <option>Squash</option>
+                        <option>Swimming</option>
+                        <option>Lawn Tennis</option>
+                        <option>Table Tennis</option>
+                    </select>
+                    <div>
+                        <input type="submit" name="sign" value="SIGN UP">
+                     </div>
+                 </div>
+            </form>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
