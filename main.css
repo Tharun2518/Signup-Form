@@ -8,7 +8,7 @@ body, div, form, input, select, label, h2 {
 /* Body styles with background image */
 body {
     font-family: Arial, sans-serif;
-    background-image: 'https://png.pngtree.com/background/20210711/original/pngtree-color-tennis-sport-advertising-background-picture-image_970644.jpg';
+    background-image:url('Backgroun.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
